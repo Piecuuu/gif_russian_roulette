@@ -1,0 +1,3 @@
+[submodule "lib/discord_gif_extractor"]
+	path = lib/discord_gif_extractor
+	url = https://github.com/piecuuu/discord_gif_extractor
