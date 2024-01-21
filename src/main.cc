@@ -78,7 +78,7 @@ int main(int argc, char *argv[]) {
   program.add_argument("--no-spoiler")
     .help("If on, the bot will not send the message as a spoiler")
     .flag();
-  program.add_argument("--allow-send-on-nsfw-channel-dangerous")
+  program.add_argument("--allow-send-on-non-nsfw-channel-dangerous")
     .help("If on, the bot will send gifs on a non-NSFW channel (DANGEROUS)")
     .flag();
 
