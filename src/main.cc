@@ -99,8 +99,8 @@ int main(int argc, char *argv[]) {
   list = curl_slist_append(list, "Content-type: application/json");
 
   nlohmann::json channel = get_channel(channel_id);
-  if(!channel["nsfw"] && program["--allow-send-on-nsfw-channel-dangerous"] == false) {
-    throw std::runtime_error("Cannot play on a non-NSFW channel. Use --allow-send-on-nsfw-channel-dangerous to bypass (DANGEROUS)");
+  if(!channel["nsfw"] && program["--allow-send-on-non-nsfw-channel-dangerous"] == false) {
+    throw std::runtime_error("Cannot play on a non-NSFW channel. Use --allow-send-on-non-nsfw-channel-dangerous to bypass (DANGEROUS)");
     return 1;
   }
 
