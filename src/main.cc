@@ -68,7 +68,7 @@ void send_to_channel(std::string channel_id, std::string content) {
 }
 
 int main(int argc, char *argv[]) {
-  argparse::ArgumentParser program("discord_gif_extractor");
+  argparse::ArgumentParser program("gif_russian_roulette");
   program.add_argument("-t", "--token")
     .help("Discord token to play the game")
     .required();
